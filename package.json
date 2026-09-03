@@ -1,0 +1,49 @@
+{
+  "name": "expo-router-ts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo/metro-runtime": "~57.0.14",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "^3.1.1",
+    "@react-navigation/bottom-tabs": "^7.18.18",
+    "@react-navigation/native": "^7.3.18",
+    "@react-navigation/native-stack": "^7.18.10",
+    "expo": "~57.0.18",
+    "expo-asset": "^57.0.15",
+    "expo-constants": "^57.0.16",
+    "expo-file-system": "~57.0.6",
+    "expo-font": "~57.0.3",
+    "expo-haptics": "~57.0.2",
+    "expo-image": "^57.0.3",
+    "expo-linear-gradient": "~57.0.1",
+    "expo-secure-store": "^57.0.2",
+    "expo-sharing": "~57.0.17",
+    "expo-status-bar": "~57.0.1",
+    "expo-updates": "~57.0.21",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-gesture-handler": "^3.2.1",
+    "react-native-reanimated": "^4.6.0",
+    "react-native-safe-area-context": "^5.9.1",
+    "react-native-screens": "^4.27.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "build": "expo export --platform all",
+    "perf:budget": "node scripts/perf-budget.mjs",
+    "verify": "npm run typecheck && npm run build && npm run perf:budget"
+  },
+  "private": true
+}
