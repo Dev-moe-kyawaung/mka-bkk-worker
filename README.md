@@ -1,1 +1,0 @@
-# mka-bkk-worker
